@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.challengeaerolab.CatalogFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearMissings">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycleViewProducts">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        app:menu_colorNormal="#FF7B00"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:menu_icon="@drawable/ic_filter_variant"
+        android:id="@+id/catalog_fragment_fab_menu">
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#FF7B00"
+            app:fab_label="Highest price"
+            android:src="@drawable/ic_chevron_up"
+            android:id="@+id/catalog_frgment_fab_highest"/>
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#FF7B00"
+            app:fab_label="Lowest price"
+            android:src="@drawable/ic_chevron_down"
+            android:id="@+id/catalog_frgment_fab_lowest"/>
+    </com.github.clans.fab.FloatingActionMenu>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:indicatorName="PacmanIndicator"
+        android:layout_gravity="center"
+        android:id="@+id/aviCatalog"
+        app:indicatorColor="#17C6F5"/>
+</FrameLayout>

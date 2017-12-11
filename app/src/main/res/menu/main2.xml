@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_post_1000"
+        android:orderInCategory="100"
+        android:title="Post 1000"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_post_5000"
+        android:orderInCategory="100"
+        android:title="Post 5000"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_post_7500"
+        android:orderInCategory="100"
+        android:title="Post 7500"
+        app:showAsAction="never" />
+</menu>
